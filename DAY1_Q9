@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float float_val;
+    int square_val, base_val, power_val;
+
+    // Read inputs
+    scanf("%f", &float_val);
+    scanf("%d", &square_val);
+    scanf("%d", &base_val);
+    scanf("%d", &power_val);
+
+    // Apply math functions and print outputs
+    printf("%d\n", (int)floor(float_val));      // Floor value
+    printf("%d\n", (int)ceil(float_val));       // Ceil value
+    printf("%d\n", (int)sqrt(square_val));      // Square root
+    printf("%d\n", (int)pow(base_val, power_val)); // Power
