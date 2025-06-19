@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    // Read two integer inputs
+    scanf("%d", &a);
+    scanf("%d", &b);
+
+    // Perform arithmetic operations and print results
+    printf("Addition=%d\n", a + b);
+    printf("Subtraction=%d\n", a - b);
+    printf("Multiplication=%d\n", a * b);
+    
+    // To avoid division by zero
+    if (b != 0) {
+        printf("Division=%d\n", a / b);
+        printf("Modulo=%d\n", a % b);
+    } else {
+        printf("Division=Undefined (division by zero)\n");
+        printf("Modulo=Undefined (division by zero)\n");
+    }
+
+    return 0;
+}
