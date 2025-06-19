@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float val;
+    
+    
+    scanf("%f", &val);
+    printf("%f\n", val);
+    printf("%.4f\n", val);
+    printf("%.2f\n", val);
+    printf("%.0f\n", ceil(val));
+    
+    return 0;
+}
