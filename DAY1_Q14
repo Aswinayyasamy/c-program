@@ -1,0 +1,29 @@
+#include <stdio.h>
+2
+int main(){
+3
+    int i;
+4
+    float f;
+5
+    char c;
+6
+    char str1 [100];
+7
+    char str2 [1,&str2);
+8
+    printf("%d\n",i);
+9
+    printf("%.2f\n",f);
+10
+    printf("%c\n",c);
+11
+    printf("%s",str1);
+12
+    printf("%s",str2);
+13
+    return 0;
+14
+}
+15
+​
