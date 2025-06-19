@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int intNumber;
+    float floatNumber;
+
+    // Taking input
+    scanf("%d", &intNumber);
+    scanf("%f", &floatNumber);
+
+    // Displaying output
+    printf("%d\n", intNumber);
+    printf("%.3f\n", floatNumber);  // prints float with 3 decimal places
+
+    return 0;
+}
