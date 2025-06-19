@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    // Read the integer input
+    scanf("%d", &num);
+
+    // Check and print the type of number
+    if (num > 0)
+        printf("The Given Number %d is Positive.\n", num);
+    else if (num < 0)
+        printf("The Given Number %d is Negative.\n", num);
+    else
+        printf("The Given Number %d is Zero.\n", num);
+
+    return 0;
+}
