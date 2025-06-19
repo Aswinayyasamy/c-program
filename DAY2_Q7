@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int wallL, wallB;
+    int p1L, p1B, p2L, p2B;
+
+    
+    scanf("%d %d", &wallL, &wallB);
+    scanf("%d %d", &p1L, &p1B);
+    scanf("%d %d", &p2L, &p2B);
+
+    int canFix = 0;
+
+    
+    if ((p1L + p2L <= wallL && p1B <= wallB && p2B <= wallB) ||
+        (p1B + p2B <= wallB && p1L <= wallL && p2L <= wallL)) {
+        canFix = 1;
+    }
+
+    
+    if ((p1L + p2B <= wallL && p1B <= wallB && p2L <= wallB) ||
+        (p1B + p2L <= wallB && p1L <= wallL && p2B <= wallL)) {
+        canFix = 1;
+    }
+
+    
+    if (canFix)
+        printf("Raj can fix both painting\n");
+    else
+        printf("Raj cannot fix both painting\n");
+
+    return 0;
+}
