@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+
+    // Reading a line of input including spaces
+    fgets(str, sizeof(str), stdin);
+
+    // Printing the output with statement
+    printf("The input is: %s", str);
+
+    return 0;
+}
